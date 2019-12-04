@@ -1,0 +1,46 @@
+{
+  "name": "react-navigation-search-header",
+  "version": "0.0.1",
+  "description": "React Navigation search header",
+  "main": "lib/commonjs/index.js",
+  "react-native": "src/index.ts",
+  "typings": "lib/typescript/index.d.ts",
+  "author": "Terry Sahaidak",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-reanimated": "1.3.0"
+  },
+  "devDependencies": {
+    "@react-native-community/bob": "^0.7.0",
+    "@types/react": "^16.8.20",
+    "@types/react-native": "^0.57.63",
+    "babel-preset-react-native": "^4.0.0",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "react": "16.8.3",
+    "react-native": "^0.61.5",
+    "typescript": "^3.7.2"
+  },
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "scripts": {
+    "prepare": "bob build"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
