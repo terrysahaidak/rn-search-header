@@ -37,7 +37,12 @@ export function HomeScreen({ navigation }: HomeProps) {
       renderItem={({ item }) => (
         <TouchableOpacity
           style={s.listItem}
-          onPress={() => navigation.navigate(item)}
+          onPress={() =>
+            navigation.navigate(item, {
+              // initiallyActive: true,
+              // autoFocus: true,
+            })
+          }
         >
           <Text style={s.text}>{item}</Text>
           <Icon name="ios-arrow-forward" color="black" size={24} />
